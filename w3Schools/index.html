@@ -15,8 +15,28 @@
     <img id="displayImg" src="assets/frog.png"/>
     <button onclick="document.getElementById('displayImg').src='assets/frog2.png'">Replace image</button>
 
+    <!--toggle replace img (with function) when clicking button-->
+    <div id="toggleImgDiv"><img id="toggleImg" src="assets/frog.png"/></div>
+    <button onclick="toggleReplace()">Toggle image</button>
 </body>
 <script>
     document.getElementById("displayJavascript").innerHTML = "This is JavaScript!";
+
+    function toggleReplace(){
+        var imgUrl;
+        var elementId = document.getElementById('toggleImg');
+
+        if (elementId.getAttribute('src') == 'assets/frog.png') {
+            imgUrl = "assets/frog2.png";
+            console.log("frog added");
+        } else if (elementId.getAttribute('src') == 'assets/frog2.png') {
+            imgUrl = "assets/frog.png";
+            console.log("frog2 added");
+        } else {
+            imgUrl = "assets/frog2.png";
+            console.log("frog added");
+        }
+        elementId.setAttribute('src',imgUrl);
+    }
 </script>
 </html>
