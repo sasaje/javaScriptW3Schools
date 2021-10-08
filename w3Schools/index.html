@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
+    <title>JavaScript w3Schools</title>
+</head>
+<body>
+    <!--replace text-->
+    <div id="displayJavascript"></div>    
+
+    <!--replace img when click button-->
+    <img id="displayImg" src="assets/frog.png"/>
+    <button onclick="document.getElementById('displayImg').src='assets/frog2.png'">Replace image</button>
+
+</body>
+<script>
+    document.getElementById("displayJavascript").innerHTML = "This is JavaScript!";
+</script>
+</html>
