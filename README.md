@@ -8,4 +8,4 @@ In index.html:
   * Toggle replace img on button click
 
 
-introAJAX in seperate folder with w3schools example. 
+intro with nodejs in seperate folder.  
